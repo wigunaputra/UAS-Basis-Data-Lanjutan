@@ -27,8 +27,51 @@
    order terdapat beberapa order item lalu untuk order setiap item ada 1 product masing masing
 
 
-4. penjelasan trigger dan view
-   
+4. penjelasan Skema basis data, relasi, trigger dan view
+
+Database
+
+Database yang saya buat ada ecommerce lalu saya gunakan untuk presentasi hari ini, lalu memulai membuat table terdiri dari table customers, orders, products. Serta orders_items.
+
+![Database](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/1374105a-0c3a-4483-89eb-ab26b5ef9f83)
+
+Tabel Customers, orders, products, order_items
+
+Customers
+
+Dalam hal ini saya membuat table customers terlebih dahulu yang berisikan tentang id customer, nama, email serta alamat customer
+
+![Database](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/b537b59c-edaa-43d4-95e6-9514b57ce05b)
+
+Order
+
+Dalam hal ini saya membuat table customers terlebih dahulu yang berisikan tentang order_id, customer_id foreign key, order_date, total_amount
+
+![Order](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/684c47bc-04fb-4bb9-b350-285a61ab3331)
+
+products
+
+Dalam hal ini saya membuat table customers terlebih dahulu yang berisikan tentang product_id, nama, price, deskripsi
+
+
+![Products](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/348ee067-c801-4a5b-bd1d-4b7c3956a3a9)
+
+Tabel Order items
+
+Dalam hal ini saya membuat table customers terlebih dahulu yang berisikan tentang order_item_id,order_id foreign, product_id foreign, quantity.
+
+![Order item](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/effaafb2-1b81-4750-a159-edf5c9865697)
+
+Insert Data setiap tabel
+
+![Customer Insert](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/df2c9e1c-f203-4fe1-8c70-64a9a09f6b13)
+
+![Insert order](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/f74221e9-a6ec-4356-b959-98293855d856)
+
+![Insert order item](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/8e162ecf-f71a-4754-a764-e7e12d2ebfd2)
+
+![insert Products](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/904506b2-54f7-42f9-8bcc-d18edd68a177)
+
 view 
 
 disini berguna untuk menampilkan sedikit saja untuk menggabungkan hasilnya contoh dari customer id dan nama bisa kita cari berapa dia total spent membeli products
@@ -40,6 +83,20 @@ Trigger
 mekanisme dalam basis data yang secara otomatis menjalankan aksi tertentu ketika ada peristiwa spesifik terjadi, seperti INSERT pada tabel.Otomatisasi Proses: Mengotomatiskan tugas rutin, seperti memperbarui data atau memvalidasi input.
 
 ![Trigger](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/2708bce8-45fe-4d5e-80c1-9752e5e6ca4e)
+
+Agregat SUM
+
+Agregat ini saya menggunakan SUM untuk menampilkan total order bisa dikatakn untuk customer yang membeli product ini  dengan itu saya menggunakan quarry dibawah ini
+
+![Agregat](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/fd4b69f4-4cce-49b3-b331-0e65f37a0289)
+
+Index
+
+Kegunaan:
+Meningkatkan Performa: Membuat indeks pada kolom customer_id di tabel Orders untuk mempercepat pencarian data.
+Optimasi Database: Indeks ini membuat query yang mencari berdasarkan customer_id lebih cepat, karena mengurangi jumlah data yang harus dipindai.
+
+![Index](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/49cc2918-cfd4-4d0d-b5a7-4a1ba1e9c53d)
 
 Relasi terdiri dari Left join dan Inner Join
 
@@ -55,6 +112,27 @@ Relasi terdiri dari Left join dan Inner Join
    Menampilkan Data yang Sesuai: Hanya menampilkan pelanggan yang memiliki pesanan.
 
    ![Inner Join](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/eece8346-32f5-4df0-b47b-315e0c11ad23)
+
+3. Subquary
+
+   Quarry ini kegunaannnya Memfilter baris yang tidak memenuhi kriteria tertentu. Mengimpor data secara selektif dari tabel lain. Menemukan nilai maksimum atau
+   minimum dalam situasi tertentu.
+
+   ![Subquarry](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/aaf4a4a8-b71b-4b4b-bdaa-9ec8f799c63c)
+
+4. Having
+   
+   Kegunaan quarry ini agar kita bisa menampilkan siapa yang memspent uang lebih dari 50 dan hasilnya dari customer id 1 dan 3
+
+   ![Having](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/224538bf-fb77-4d5d-b6b3-e7fbef8afdeb)
+
+
+6. Wildcard
+
+   untuk menemukan beberapa item dengan data yang serupa, tetapi tidak identik semisal saya ketik ‘%john%’ maka hasilnya seperti ini
+
+   ![Wildcard](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/7cad90c0-1cab-468b-82a4-1ae4462e6ea9)
+
 
 
 
