@@ -22,3 +22,7 @@ disini berguna untuk menampilkan sedikit saja untuk menggabungkan hasilnya conto
 Trigger
 mekanisme dalam basis data yang secara otomatis menjalankan aksi tertentu ketika ada peristiwa spesifik terjadi, seperti INSERT pada tabel.Otomatisasi Proses: Mengotomatiskan tugas rutin, seperti memperbarui data atau memvalidasi input.
 ![Trigger](https://github.com/wigunaputra/UAS-Basis-Data-Lanjutan/assets/114755182/2708bce8-45fe-4d5e-80c1-9752e5e6ca4e)
+
+Relasi terdiri dari Left join dan Inner Join
+Left join
+Menggabungkan Tabel: Menggabungkan dua tabel dan mengembalikan semua baris dari tabel kiri (Customers), meskipun tidak ada kecocokan di tabel kanan (Orders).
